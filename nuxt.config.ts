@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/test-utils',
     '@nuxtjs/supabase',
+    '@nuxthub/core',
   ],
   devtools: {
     enabled: true,
@@ -17,6 +18,14 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2025-07-15',
+  nitro: {
+    experimental: {
+      openAPI: true,
+    },
+  },
+  hub: {
+    // TODO: Add your hub configuration here
+  },
   vite: {
     plugins: [
       tailwindcss(),
