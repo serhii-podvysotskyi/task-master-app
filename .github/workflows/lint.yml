@@ -1,5 +1,8 @@
-name: CI
-on: pull_request
+name: Check Code Style with ESLint
+on:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -11,11 +14,11 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 24
+        node-version: 22
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Run ESLint
       run: npm run lint
