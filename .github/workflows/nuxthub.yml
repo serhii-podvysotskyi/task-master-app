@@ -5,12 +5,12 @@ on:
     branches:
       - main
 
-runs-on: self-hosted
-
 jobs:
   deploy:
     name: "Deploy to NuxtHub"
-    runs-on: ubuntu-latest
+
+    runs-on: self-hosted
+
     permissions:
       contents: read
       id-token: write
