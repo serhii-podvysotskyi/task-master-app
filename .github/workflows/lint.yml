@@ -1,24 +1,30 @@
 name: Check Code Style with ESLint
+
 on:
   pull_request:
     branches:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  lint:
+    name: "Check Code Style with ESLint"
+
+    runs-on: self-hosted
+
+    permissions:
+      contents: read
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Install Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: 22
-        cache: 'npm'
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Run ESLint
-      run: npm run lint
+      - name: Run ESLint
+        run: npm run lint
