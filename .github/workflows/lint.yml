@@ -1,8 +1,11 @@
 name: Check Code Style with ESLint
+
 on:
   pull_request:
     branches:
       - main
+
+runs-on: self-hosted
 
 jobs:
   build:

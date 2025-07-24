@@ -1,8 +1,11 @@
 name: Deploy to NuxtHub
+
 on:
   push:
     branches:
       - main
+
+runs-on: self-hosted
 
 jobs:
   deploy:
