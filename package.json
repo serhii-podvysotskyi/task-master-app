@@ -12,7 +12,8 @@
     "lint:fix": "eslint . --fix",
     "supabase:start": "supabase start",
     "supabase:stop": "supabase stop",
-    "deploy": "nuxthub deploy"
+    "deploy": "nuxthub deploy",
+    "test": "vitest"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.23",
@@ -28,11 +29,15 @@
     "@nuxt/eslint": "^1.7.0",
     "@nuxt/test-utils": "^3.19.2",
     "@tailwindcss/vite": "^4.1.11",
+    "@vue/test-utils": "^2.4.6",
     "eslint": "^9.31.0",
+    "happy-dom": "^18.0.1",
     "nuxthub": "^0.9.3",
+    "playwright-core": "^1.54.1",
     "supabase": "^2.31.8",
     "typescript": "^5.8.3",
     "vite-plugin-eslint2": "^5.0.4",
+    "vitest": "^3.2.4",
     "wrangler": "^4.25.1"
   }
 }
