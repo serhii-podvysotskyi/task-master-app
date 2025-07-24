@@ -106,10 +106,10 @@
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div class="text-center">
           <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
-            Data to enrich your online business
+            Connect every team, task and project together
           </h1>
           <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+            The only platform that can support your company at any scale.
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a
@@ -122,7 +122,8 @@
               href="#"
               class="text-sm/6 font-semibold text-gray-900"
             >
-              Learn more <span aria-hidden="true">→</span>
+              Learn more
+              <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
