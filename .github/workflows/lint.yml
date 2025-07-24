@@ -1,4 +1,4 @@
-name: Check Code Style with ESLint
+name: Check Code Style
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   lint:
-    name: "Check Code Style with ESLint"
+    name: "ESLint"
 
     runs-on: self-hosted
 
