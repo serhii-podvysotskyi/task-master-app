@@ -1,16 +1,10 @@
 name: Deploy to NuxtHub
-
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   deploy:
     name: "Deploy to NuxtHub"
-
-    runs-on: self-hosted
-
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
@@ -24,7 +18,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22
           cache: 'npm'
 
       - name: Install dependencies
