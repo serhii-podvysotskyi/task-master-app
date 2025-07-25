@@ -1,4 +1,4 @@
-name: Check Code Style
+name: Run tests
 
 on:
   pull_request:
@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  lint:
-    name: "ESLint"
+  vitest:
+    name: "Vitest"
 
     runs-on: self-hosted
 
@@ -26,5 +26,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run ESLint
-        run: npm run lint
+      - name: Run Vitest
+        run: npm run test

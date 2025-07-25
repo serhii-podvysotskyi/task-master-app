@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxtjs/supabase',
     '@nuxthub/core',
+    '@nuxt/test-utils/module',
   ],
   devtools: {
     enabled: true,
