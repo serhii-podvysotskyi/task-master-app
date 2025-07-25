@@ -9,7 +9,7 @@ jobs:
   deploy:
     name: "Deploy to NuxtHub"
 
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     permissions:
       contents: read
