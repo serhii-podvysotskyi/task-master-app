@@ -35,7 +35,7 @@
     "happy-dom": "^18.0.1",
     "nuxthub": "^0.9.3",
     "playwright-core": "^1.54.1",
-    "supabase": "^2.31.8",
+    "supabase": "^2.33.3",
     "typescript": "^5.8.3",
     "vite-plugin-eslint2": "^5.0.4",
     "vitest": "^3.2.4",
