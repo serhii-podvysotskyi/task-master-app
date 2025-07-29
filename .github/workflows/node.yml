@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 24
 
-      - name: 'Cache mpm packages'
+      - name: 'Cache npm packages'
         id: composer-cache
         uses: actions/cache@v3
         with:
@@ -53,7 +53,7 @@ jobs:
         with:
           node-version: 24
 
-      - name: 'Cache mpm packages'
+      - name: 'Cache npm packages'
         id: composer-cache
         uses: actions/cache@v3
         with:
@@ -61,6 +61,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
+      - name: 'Setup nuxt'
+        run: npm run postinstall
 
       - name: 'Run ESLint'
         run: npm run lint
@@ -80,7 +83,7 @@ jobs:
         with:
           node-version: 24
 
-      - name: 'Cache mpm packages'
+      - name: 'Cache npm packages'
         id: composer-cache
         uses: actions/cache@v3
         with:
@@ -88,6 +91,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
+      - name: 'Setup nuxt'
+        run: npm run postinstall
 
       - name: 'Run ESLint'
         run: npm run test
