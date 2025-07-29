@@ -95,5 +95,5 @@ jobs:
       - name: 'Setup nuxt'
         run: npm run postinstall
 
-      - name: 'Run ESLint'
+      - name: 'Run Vitest'
         run: npm run test
