@@ -22,7 +22,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm'
 
       - name: 'Cache mpm packages'
         id: composer-cache
@@ -47,11 +46,12 @@ jobs:
     needs: [build]
 
     steps:
+      - uses: actions/checkout@v4
+
       - name: 'Setup Node.js'
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm'
 
       - name: 'Cache mpm packages'
         id: composer-cache
@@ -73,11 +73,12 @@ jobs:
     needs: [ build ]
 
     steps:
+      - uses: actions/checkout@v4
+
       - name: 'Setup Node.js'
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm'
 
       - name: 'Cache mpm packages'
         id: composer-cache
