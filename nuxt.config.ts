@@ -4,8 +4,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/test-utils',
-    '@nuxtjs/supabase',
-    '@nuxthub/core',
     '@nuxt/test-utils/module',
   ],
   devtools: {
@@ -24,9 +22,6 @@ export default defineNuxtConfig({
       openAPI: true,
     },
   },
-  hub: {
-    // TODO: Add your hub configuration here
-  },
   vite: {
     plugins: [
       tailwindcss(),
@@ -36,16 +31,6 @@ export default defineNuxtConfig({
     checker: true,
     config: {
       stylistic: true,
-    },
-  },
-  supabase: {
-    redirectOptions: {
-      login: '/auth/login',
-      callback: '/auth/confirm',
-      include: [
-        '/admin(/*)?',
-      ],
-      saveRedirectToCookie: false,
     },
   },
 })
