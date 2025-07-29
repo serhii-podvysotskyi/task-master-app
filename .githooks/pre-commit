@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Building App..."
+npm run build
+
+echo "Running ESLint..."
+npm run lint
+
+echo "Running Tests..."
+npm run test
