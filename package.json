@@ -16,7 +16,10 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.2.0",
+    "@pinia/nuxt": "^0.11.2",
     "nuxt": "^4.0.1",
+    "nuxt-auth-sanctum": "^1.1.1",
+    "pinia": "^3.0.3",
     "tailwindcss": "^4.1.11",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
@@ -25,6 +28,7 @@
     "@nuxt/eslint": "^1.7.1",
     "@nuxt/test-utils": "^3.19.2",
     "@tailwindcss/vite": "^4.1.11",
+    "@vue/language-server": "^3.0.4",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.31.0",
     "happy-dom": "^18.0.1",
