@@ -18,7 +18,7 @@
     "@heroicons/vue": "^2.2.0",
     "@pinia/nuxt": "^0.11.2",
     "nuxt": "^4.0.1",
-    "nuxt-auth-sanctum": "^1.1.1",
+    "nuxt-auth-sanctum": "^1.1.2",
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.11",
     "vue": "^3.5.17",
