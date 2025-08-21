@@ -5,6 +5,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/test-utils',
     '@nuxt/test-utils/module',
+    'nuxt-auth-sanctum',
+    '@pinia/nuxt',
   ],
   devtools: {
     enabled: true,
@@ -31,6 +33,23 @@ export default defineNuxtConfig({
     checker: true,
     config: {
       stylistic: true,
+    },
+  },
+  pinia: {
+    storesDirs: ['./stores/**'],
+  },
+  sanctum: {
+    endpoints: {
+      csrf: '/sanctum/csrf-cookie',
+      login: '/auth/login',
+      logout: '/auth/logout',
+      user: '/auth/user',
+    },
+    redirect: {
+      onLogin: '/dashboard',
+      onLogout: '/',
+      onAuthOnly: '/login',
+      onGuestOnly: '/dashboard',
     },
   },
 })

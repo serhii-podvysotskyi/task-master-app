@@ -1,3 +1,23 @@
+<script setup lang="ts">
+import { useAuthStore } from '~/stores/authStore'
+
+const authStore = useAuthStore()
+
+definePageMeta({
+  layout: 'auth',
+  middleware: ['sanctum:guest'],
+})
+
+useHead({
+  title: 'Task Master - Login',
+})
+
+const form = reactive({
+  email: '',
+  password: '',
+})
+</script>
+
 <template>
   <div class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -11,6 +31,7 @@
         class="space-y-6"
         action="#"
         method="POST"
+        @submit.prevent="authStore.login(form)"
       >
         <div>
           <label
@@ -22,6 +43,7 @@
           <div class="mt-2">
             <input
               id="email"
+              v-model="form.email"
               type="email"
               name="email"
               autocomplete="email"
@@ -51,6 +73,7 @@
           <div class="mt-2">
             <input
               id="password"
+              v-model="form.password"
               type="password"
               name="password"
               autocomplete="current-password"
@@ -72,13 +95,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-definePageMeta({
-  layout: 'auth',
-})
-
-useHead({
-  title: 'Login',
-})
-</script>
