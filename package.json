@@ -20,7 +20,7 @@
     "nuxt": "^4.0.3",
     "nuxt-auth-sanctum": "^1.2.0",
     "pinia": "^3.0.3",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.12",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
